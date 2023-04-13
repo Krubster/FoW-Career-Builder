@@ -1,0 +1,52 @@
+@import '../values/spacing.css';
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+.wrapper {
+  height: 100vh;
+  transition: all 500ms ease;
+}
+.container {
+  width: 100%;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-base-1);
+  box-shadow: 0px 0px 0.5rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+@media screen and (width >= 768px) {
+  .container {
+    width: 75rem;
+  }
+}
+@media screen and (width >= 992px) {
+  .container {
+    width: 95rem;
+  }
+}
+.copy {
+  position: relative;
+  z-index: 20;
+}
+@media screen and (width < 480px) {
+  .copy {
+    z-index: auto;
+  }
+}
+.copyText {
+  font-size: var(--font-size-2);
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: var(--spacing);
+}
+.copyLink:link,
+.copyLink:visited,
+.copyLink:hover,
+.copyLink:active {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+}
+.copyLink:hover {
+  text-decoration: none;
+}

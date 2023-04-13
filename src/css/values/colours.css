@@ -1,0 +1,46 @@
+:root {
+  --color-base-0: #242728;
+  --color-base-1: #2e3233;
+  --color-base-2: #393e3f;
+  --color-base-3: #444444;
+  --color-base-4: #535a5e;
+  --color-base-5: #666666;
+  --color-base-6: #989898;
+
+  --color-border: var(--color-base-5);
+
+  --color-text-primary: #f3f4f5;
+  --color-text-secondary: #dedede;
+
+  --color-primary: #57805e;
+  --color-primary-1: #5cb85c;
+  --color-primary-2: #599c5c;
+  --color-secondary: #304f68;
+  --color-secondary-1: #337ab7;
+  --color-secondary-2: #31648f;
+  --color-negative: #a03537;
+  --color-negative-1: #d9534f;
+  --color-negative-2: #b15553;
+
+  --color-xp: #fbbd08;
+  --color-xp-dark: #715607;
+  --color-renown: #a333c8;
+  --color-renown-dark: #5d3769;
+
+  --color-points: #db2828;
+  --color-points-light: #ff5c69;
+  --color-points-dark: #5a3b3b;
+
+  --color-ability-border-selected: #5cda36;
+  --color-ability-inactive: #ecb3b3;
+  --color-ability-active: #90d28b;
+
+  --color-transparent-white: rgba(255, 255, 255, 0.2);
+  --color-transparent-black: rgba(0, 0, 0, 0.6);
+  --color-transparent: rgba(0, 0, 0, 0);
+
+  --color-popover-background: #161616;
+
+  --color-popover-ability-primary: var(--color-xp);
+  --color-popover-ability-secondary: #0078e7;
+}

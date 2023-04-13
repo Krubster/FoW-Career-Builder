@@ -1,0 +1,77 @@
+@import '../values/spacing.css';
+
+.marginTop {
+  margin-top: var(--spacing);
+}
+
+.marginTop--extra-small {
+  margin-top: var(--spacing-extra-small);
+}
+
+.marginTop--small {
+  margin-top: var(--spacing-small);
+}
+
+.marginTop--medium {
+  margin-top: var(--spacing-medium);
+}
+
+.marginTop--large {
+  margin-top: var(--spacing-large);
+}
+
+.marginTop--extra-large {
+  margin-top: var(--spacing-extra-large);
+}
+
+@media screen and (width < 480px) {
+  .marginTop\@mobile {
+    margin-top: var(--spacing);
+  }
+}
+
+.marginTop--none {
+  margin-top: 0;
+}
+
+@media screen and (width < 480px) {
+  .marginTop--none\@mobile {
+    margin-top: 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .marginTop--none\@xs {
+    margin-top: 0;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .marginTop--none\@sm {
+    margin-top: 0;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .marginTop--none\@sm-min {
+    margin-top: 0;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .marginTop--none\@md {
+    margin-top: 0;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .marginTop--none\@md-min {
+    margin-top: 0;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .marginTop--none\@lg {
+    margin-top: 0;
+  }
+}

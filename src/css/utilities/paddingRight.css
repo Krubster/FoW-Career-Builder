@@ -1,0 +1,77 @@
+@import '../values/spacing.css';
+
+.paddingRight {
+  padding-right: var(--spacing);
+}
+
+.paddingRight--extra-small {
+  padding-right: var(--spacing-extra-small);
+}
+
+.paddingRight--small {
+  padding-right: var(--spacing-small);
+}
+
+.paddingRight--medium {
+  padding-right: var(--spacing-medium);
+}
+
+.paddingRight--large {
+  padding-right: var(--spacing-large);
+}
+
+.paddingRight--extra-large {
+  padding-right: var(--spacing-extra-large);
+}
+
+@media screen and (width < 480px) {
+  .paddingRight\@mobile {
+    padding-right: var(--spacing);
+  }
+}
+
+.paddingRight--none {
+  padding-right: 0;
+}
+
+@media screen and (width < 480px) {
+  .paddingRight--none\@mobile {
+    padding-right: 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .paddingRight--none\@xs {
+    padding-right: 0;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .paddingRight--none\@sm {
+    padding-right: 0;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .paddingRight--none\@sm-min {
+    padding-right: 0;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .paddingRight--none\@md {
+    padding-right: 0;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .paddingRight--none\@md-min {
+    padding-right: 0;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .paddingRight--none\@lg {
+    padding-right: 0;
+  }
+}

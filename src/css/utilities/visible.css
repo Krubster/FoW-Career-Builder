@@ -1,0 +1,51 @@
+.visible\@mobile,
+.visible\@xs,
+.visible\@sm,
+.visible\@sm-min,
+.visible\@md,
+.visible\@md-min,
+.visible\@lg {
+  display: none !important;
+}
+
+@media screen and (width < 480px) {
+  .visible\@mobile {
+    display: block !important;
+  }
+}
+
+@media screen and (width < 768px) {
+  .visible\@xs {
+    display: block !important;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .visible\@sm {
+    display: block !important;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .visible\@sm-min {
+    display: block !important;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .visible\@md {
+    display: block !important;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .visible\@md-min {
+    display: block !important;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .visible\@lg {
+    display: block !important;
+  }
+}

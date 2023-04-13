@@ -1,0 +1,42 @@
+@import '../values/spacing.css';
+@import '../values/colours.css';
+
+.container {
+  composes: box from '../shared/box.css';
+}
+.heading {
+  composes: heading1 from '../shared/heading.css';
+}
+.moraleContainer {
+  display: flex;
+}
+@media screen and (width < 480px) {
+  .moraleContainer {
+    display: block;
+  }
+}
+.morale {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-right: 1px solid var(--color-base-6);
+  padding-left: var(--spacing-small);
+}
+@media screen and (width < 480px) {
+  .morale {
+    padding-left: 0;
+    padding-bottom: var(--spacing);
+    border-right: 0;
+  }
+}
+.moraleFirst {
+  composes: morale;
+  padding-left: 0;
+}
+.moraleLast {
+  composes: morale;
+  border-right: none;
+}
+.moraleHeading {
+  composes: heading2 from '../shared/heading.css';
+}

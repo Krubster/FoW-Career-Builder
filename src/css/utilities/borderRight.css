@@ -1,0 +1,61 @@
+@import '../values/colours.css';
+
+.borderRight {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: var(--color-border);
+}
+
+@media screen and (width >= 768px) {
+  .borderRight\@sm-min {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: var(--color-border);
+  }
+}
+
+.borderRight--none {
+  border-right-width: 0;
+}
+
+@media screen and (width < 480px) {
+  .borderRight--none\@mobile {
+    border-right-width: 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .borderRight--none\@xs {
+    border-right-width: 0;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .borderRight--none\@sm {
+    border-right-width: 0;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .borderRight--none\@sm-min {
+    border-right-width: 0;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .borderRight--none\@md {
+    border-right-width: 0;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .borderRight--none\@md-min {
+    border-right-width: 0;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .borderRight--none\@lg {
+    border-right-width: 0;
+  }
+}

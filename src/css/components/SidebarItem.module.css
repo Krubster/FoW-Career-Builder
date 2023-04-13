@@ -1,0 +1,20 @@
+@import '../values/spacing.css';
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.link {
+  font-size: var(--font-size-1);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  line-height: 1;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.icon {
+  composes: careerIconSmallest from '../shared/careerIcon.css';
+}

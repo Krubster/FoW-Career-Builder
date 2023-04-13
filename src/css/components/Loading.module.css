@@ -1,0 +1,32 @@
+@import '../values/spacing.css';
+@import '../values/widths.css';
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+.container {
+  display: flex;
+  align-items: center;
+}
+.containerSidebar {
+  composes: container;
+  margin-right: var(--width-sidebar);
+}
+.title {
+  margin-left: var(--spacing);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-4);
+}
+.icon {
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.4rem solid var(--color-transparent-white);
+  border-top-color: var(--color-text-primary);
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

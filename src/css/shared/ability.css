@@ -1,0 +1,23 @@
+@import '../values/colours.css';
+
+:root {
+  --ability-width: 36px;
+  --ability-height: 36px;
+  --opacity-inactive: 0.2;
+}
+
+.ability {
+  margin: 0.1rem;
+  width: var(--ability-width);
+  height: var(--ability-height);
+  background-color: var(--color-base-5);
+}
+.image {
+  display: block;
+  width: var(--ability-width);
+  height: var(--ability-height);
+}
+.imageInactive {
+  composes: image;
+  opacity: var(--opacity-inactive);
+}

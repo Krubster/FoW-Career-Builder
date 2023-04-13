@@ -1,0 +1,77 @@
+@import '../values/spacing.css';
+
+.paddingLeft {
+  padding-left: var(--spacing);
+}
+
+.paddingLeft--extra-small {
+  padding-left: var(--spacing-extra-small);
+}
+
+.paddingLeft--small {
+  padding-left: var(--spacing-small);
+}
+
+.paddingLeft--medium {
+  padding-left: var(--spacing-medium);
+}
+
+.paddingLeft--large {
+  padding-left: var(--spacing-large);
+}
+
+.paddingLeft--extra-large {
+  padding-left: var(--spacing-extra-large);
+}
+
+@media screen and (width < 480px) {
+  .paddingLeft\@mobile {
+    padding-left: var(--spacing);
+  }
+}
+
+.paddingLeft--none {
+  padding-left: 0;
+}
+
+@media screen and (width < 480px) {
+  .paddingLeft--none\@mobile {
+    padding-left: 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .paddingLeft--none\@xs {
+    padding-left: 0;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .paddingLeft--none\@sm {
+    padding-left: 0;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .paddingLeft--none\@sm-min {
+    padding-left: 0;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .paddingLeft--none\@md {
+    padding-left: 0;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .paddingLeft--none\@md-min {
+    padding-left: 0;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .paddingLeft--none\@lg {
+    padding-left: 0;
+  }
+}

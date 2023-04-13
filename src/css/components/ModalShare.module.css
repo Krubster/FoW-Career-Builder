@@ -1,0 +1,34 @@
+@import '../values/spacing.css';
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+:root {
+  --modalSelectablePadding: 1rem;
+}
+
+.modalTitle {
+  composes: headingCareerSmall from '../shared/heading.css';
+}
+.modalTitleIcon {
+  composes: careerIconSmall from '../shared/careerIcon.css';
+}
+.modalCopy {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-2);
+  margin-bottom: var(--spacing-medium);
+  margin-top: var(--spacing-medium);
+}
+.modalSelectable {
+  display: block;
+  border: 1px solid var(--color-base-3);
+  background-color: var(--color-base-6);
+  color: var(--color-base-0);
+  padding-top: var(--modalSelectablePadding);
+  padding-right: var(--modalSelectablePadding);
+  padding-bottom: var(--modalSelectablePadding);
+  padding-left: var(--modalSelectablePadding);
+  width: calc(100% - (var(--modalSelectablePadding) * 2));
+  text-align: center;
+  font-size: var(--font-size-1);
+  word-break: break-all;
+}

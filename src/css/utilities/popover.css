@@ -1,0 +1,134 @@
+@import '../values/colours.css';
+
+:root {
+  --width-popover: 35rem;
+  /* Following two rules must match corresponding values in Popover.js
+* Distance of popover from parent */
+  --spacing-popover: 0.5rem;
+  --arrow-size: 1rem;
+}
+
+.popover {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: var(--width-popover);
+  padding: 1rem;
+  background-color: var(--color-popover-background);
+  color: var(--color-text-primary);
+  border-radius: 0.4rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+@media screen and (width < 480px) {
+  .popover {
+    position: fixed;
+    width: calc(100% - 2rem);
+    top: 1rem !important;
+    left: 1rem !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+}
+
+.popover--active {
+  display: block;
+}
+
+.popover--active.popover--fade {
+  opacity: 1;
+}
+
+.popover__parent {
+  position: relative;
+}
+
+@media screen and (width < 480px) {
+  .popover__parent {
+    position: static;
+  }
+}
+
+.popover__footer {
+  display: none;
+}
+
+@media screen and (width < 480px) {
+  .popover__footer {
+    display: block;
+  }
+}
+
+/* popover position coordinates
+  * top and bottom alignment requires JS help for 'top'/'bottom' property */
+
+.popover--top,
+.popover--bottom {
+  left: calc(50% - (var(--width-popover) / 2));
+}
+
+.popover--right {
+  right: calc(
+    (var(--width-popover) * -1) - var(--spacing-popover) - var(--arrow-size)
+  );
+}
+
+.popover--left {
+  left: calc(
+    (var(--width-popover) * -1) - var(--spacing-popover) - var(--arrow-size)
+  );
+}
+
+.popover--top:before {
+  border-left: var(--arrow-size) solid transparent;
+  border-right: var(--arrow-size) solid transparent;
+  border-top: var(--arrow-size) solid var(--color-popover-background);
+  bottom: calc(var(--arrow-size) * -1);
+  left: calc(50% - var(--arrow-size));
+}
+
+.popover--bottom:before {
+  border-left: var(--arrow-size) solid transparent;
+  border-right: var(--arrow-size) solid transparent;
+  border-bottom: var(--arrow-size) solid var(--color-popover-background);
+  top: calc(var(--arrow-size) * -1);
+  left: calc(50% - var(--arrow-size));
+}
+
+.popover--left:before {
+  border-top: var(--arrow-size) solid transparent;
+  border-bottom: var(--arrow-size) solid transparent;
+  border-left: var(--arrow-size) solid var(--color-popover-background);
+  top: calc(50% - var(--arrow-size));
+  right: calc(var(--arrow-size) * -1);
+}
+
+.popover--right:before {
+  border-top: var(--arrow-size) solid transparent;
+  border-bottom: var(--arrow-size) solid transparent;
+  border-right: var(--arrow-size) solid var(--color-popover-background);
+  top: calc(50% - var(--arrow-size));
+  left: calc(var(--arrow-size) * -1);
+}
+
+/* "arrow" (i.e. .popover__arrow) coordinates */
+
+.popover:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+@media screen and (width < 480px) {
+  .popover:before {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+  }
+}

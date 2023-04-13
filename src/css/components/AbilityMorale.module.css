@@ -1,0 +1,34 @@
+@import '../values/colours.css';
+
+:root {
+  --border-radius: 50%;
+}
+
+.ability {
+  composes: ability from '../shared/ability.css';
+  border-radius: var(--border-radius);
+  border: 0.1rem solid var(--color-base-1);
+  cursor: pointer;
+}
+.abilityMasteryActive {
+  composes: ability;
+  background-color: var(--color-ability-active);
+}
+.abilityMasterySelected {
+  composes: ability;
+  background: transparent;
+  background-color: transparent;
+}
+.abilitySelected {
+  composes: ability;
+  border: 0.2rem solid var(--color-ability-border-selected);
+  margin: 0;
+}
+.image {
+  composes: image from '../shared/ability.css';
+  border-radius: var(--border-radius);
+}
+.imageInactive {
+  composes: imageInactive from '../shared/ability.css';
+  border-radius: var(--border-radius);
+}

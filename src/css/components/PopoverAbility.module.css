@@ -1,0 +1,33 @@
+.row {
+  composes: row from '../shared/popover.css';
+}
+.rowLarge {
+  composes: rowLarge from '../shared/popover.css';
+}
+.item {
+  composes: item from '../shared/popover.css';
+}
+.itemLarge {
+  composes: itemLarge from '../shared/popover.css';
+}
+.itemRight {
+  composes: itemTitle from '../shared/popover.css';
+}
+.itemTitle {
+  composes: itemTitle from '../shared/popover.css';
+}
+.itemTitleRight {
+  composes: itemTitleRight from '../shared/popover.css';
+}
+.note {
+  composes: note from '../shared/popover.css';
+}
+.description {
+  composes: description from '../shared/popover.css';
+}
+.divider {
+  composes: divider from '../shared/popover.css';
+}
+.image {
+  composes: image from '../shared/popover.css';
+}

@@ -1,0 +1,77 @@
+@import '../values/spacing.css';
+
+.paddingTop {
+  padding-top: var(--spacing);
+}
+
+.paddingTop--extra-small {
+  padding-top: var(--spacing-extra-small);
+}
+
+.paddingTop--small {
+  padding-top: var(--spacing-small);
+}
+
+.paddingTop--medium {
+  padding-top: var(--spacing-medium);
+}
+
+.paddingTop--large {
+  padding-top: var(--spacing-large);
+}
+
+.paddingTop--extra-large {
+  padding-top: var(--spacing-extra-large);
+}
+
+@media screen and (width < 480px) {
+  .paddingTop\@mobile {
+    padding-top: var(--spacing);
+  }
+}
+
+.paddingTop--none {
+  padding-top: 0;
+}
+
+@media screen and (width < 480px) {
+  .paddingTop--none\@mobile {
+    padding-top: 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .paddingTop--none\@xs {
+    padding-top: 0;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .paddingTop--none\@sm {
+    padding-top: 0;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .paddingTop--none\@sm-min {
+    padding-top: 0;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .paddingTop--none\@md {
+    padding-top: 0;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .paddingTop--none\@md-min {
+    padding-top: 0;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .paddingTop--none\@lg {
+    padding-top: 0;
+  }
+}

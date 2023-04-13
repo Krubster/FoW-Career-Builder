@@ -1,0 +1,26 @@
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+.Breadcrumb {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: var(--font-size-1);
+  color: var(--color-text-primary);
+}
+.BreadcrumbDivider {
+  composes: Breadcrumb;
+  padding: 0 0.3rem;
+}
+.BreadcrumbActive {
+  composes: Breadcrumb;
+  font-weight: bold;
+}
+.BreadcrumbLink {
+  color: var(--color-text-secondary);
+}
+.BreadcrumbLink:hover {
+  text-decoration: none;
+}
+.matt {
+  font-size: 2px;
+}

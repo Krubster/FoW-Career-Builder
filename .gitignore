@@ -1,0 +1,14 @@
+node_modules
+public/js
+.DS_Store
+npm-debug.log
+analytics.js
+public/css
+/.project
+/.settings
+/build
+/coverage
+/import/data
+/import/data-master
+.eslintcache
+/abilities

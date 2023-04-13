@@ -1,0 +1,89 @@
+@import '../values/spacing.css';
+
+.marginLeft {
+  margin-left: var(--spacing);
+}
+
+.marginLeft--extra-small {
+  margin-left: var(--spacing-extra-small);
+}
+
+.marginLeft--small {
+  margin-left: var(--spacing-small);
+}
+
+.marginLeft--medium {
+  margin-left: var(--spacing-medium);
+}
+
+.marginLeft--large {
+  margin-left: var(--spacing-large);
+}
+
+.marginLeft--extra-large {
+  margin-left: var(--spacing-extra-large);
+}
+
+@media screen and (width < 480px) {
+  .marginLeft\@mobile {
+    margin-left: var(--spacing);
+  }
+}
+
+@media screen and (width >= 768px) {
+  .marginLeft\@sm-min {
+    margin-left: var(--spacing);
+  }
+}
+
+@media screen and (width >= 992px) {
+  .marginLeft\@md-min {
+    margin-left: var(--spacing);
+  }
+}
+
+.marginLeft--none {
+  margin-left: 0;
+}
+
+@media screen and (width < 480px) {
+  .marginLeft--none\@mobile {
+    margin-left: 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  .marginLeft--none\@xs {
+    margin-left: 0;
+  }
+}
+
+@media screen and (768px <= width < 992px) {
+  .marginLeft--none\@sm {
+    margin-left: 0;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .marginLeft--none\@sm-min {
+    margin-left: 0;
+  }
+}
+
+@media screen and (992px <= width < 1200px) {
+  .marginLeft--none\@md {
+    margin-left: 0;
+  }
+}
+
+@media screen and (width >= 992px) {
+  .marginLeft--none\@md-min {
+    margin-left: 0;
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .marginLeft--none\@lg {
+    margin-left: 0;
+  }
+}

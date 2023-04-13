@@ -1,0 +1,50 @@
+@import '../values/spacing.css';
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+.container {
+  composes: box from '../shared/box.css';
+}
+.heading {
+  composes: heading1Light from '../shared/heading.css';
+}
+.item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-1);
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+@media screen and (width >= 992px) {
+  .item {
+    flex-wrap: nowrap;
+  }
+}
+.itemIcon {
+  padding-right: var(--spacing-small);
+}
+.itemDate {
+  width: 7rem;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+.itemText {
+  width: 100%;
+  margin-top: var(--spacing-small);
+  padding-left: 1.3rem;
+}
+.itemText a {
+  color: var(--color-text-secondary);
+}
+.itemText a:hover {
+  text-decoration: none;
+}
+@media screen and (width >= 992px) {
+  .itemText {
+    width: auto;
+    margin-top: 0;
+    padding-left: 0;
+  }
+}

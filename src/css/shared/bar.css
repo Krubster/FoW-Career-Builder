@@ -1,0 +1,11 @@
+@import '../values/colours.css';
+
+.bar {
+  position: relative;
+}
+.barProgress {
+  position: relative;
+  height: 10px;
+  width: 1%;
+  transition: width 0.3s ease;
+}

@@ -1,0 +1,104 @@
+@import '../values/spacing.css';
+@import '../values/colours.css';
+@import '../values/fontSizes.css';
+
+.button {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  color: var(--color-text-primary);
+  font-weight: 300;
+  font-size: var(--font-size-2);
+  padding-top: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  padding-bottom: var(--spacing-small);
+  padding-left: var(--spacing-small);
+}
+@media screen and (width >= 768px) {
+  .button {
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+  }
+}
+.buttonPrimary {
+  composes: button;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary-1);
+}
+.buttonPrimary:hover,
+.buttonPrimary:active,
+.buttonPrimary:focus {
+  background-color: var(--color-primary-2);
+}
+.buttonSecondary {
+  composes: button;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-1);
+}
+.buttonSecondary:hover,
+.buttonSecondary:active,
+.buttonSecondary:focus {
+  background-color: var(--color-secondary-2);
+}
+.buttonSecondaryInverse {
+  composes: button;
+  background-color: var(--color-secondary-1);
+  border: 1px solid var(--color-secondary);
+}
+.buttonSecondaryInverse:hover,
+.buttonSecondaryInverse:active,
+.buttonSecondaryInverse:focus {
+  background-color: var(--color-secondary-2);
+}
+.buttonSecondaryInverseLarge {
+  composes: buttonSecondaryInverse;
+  font-size: 2rem;
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
+@media screen and (width < 480px) {
+  .buttonSecondaryInverseLarge {
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+  }
+}
+.buttonNegative {
+  composes: button;
+  background-color: var(--color-negative);
+  border: 1px solid var(--color-negative-1);
+}
+.buttonNegative:hover,
+.buttonNegative:active,
+.buttonNegative:focus {
+  background-color: var(--color-negative-2);
+}
+
+.buttonDisabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+/*
+
+.c-button--small {
+  font-size: 70%;
+  width: 2.8rem;
+  height: 2rem;
+}
+
+.c-button--large {
+  font-size: 2rem;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+  @media screen and (max-width: $breakpoint-mobile) {
+    padding-left: $base-spacing;
+    padding-right: $base-spacing;
+  }
+}*/
