@@ -25,7 +25,7 @@ const ModalShareCareer = ({
       sharingLink={sharingLink}
       icon={url}
       title={`Share this ${careers[slug].name} build`}
-      shareText={`RoR.builders - ${careers[slug].name}`}
+      shareText={`FoW.builders - ${careers[slug].name}`}
     />
   );
 };

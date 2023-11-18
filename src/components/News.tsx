@@ -13,20 +13,9 @@ const News = () => {
             nameSlug="right-chevron-icon"
           />
         </span>
-        <div className={css.itemDate}>2019-11-15</div>
-        <span className={css.itemText}>A Renown Builder has been added!</span>
-      </div>
-      <div className={css.item}>
-        <span className={css.itemIcon}>
-          <IconChevronRight
-            classes="icon--small"
-            name="right chevron icon"
-            nameSlug="right-chevron-icon"
-          />
-        </span>
-        <div className={css.itemDate}>2019-03-05</div>
+        <div className={css.itemDate}>14-11-2023</div>
         <span className={css.itemText}>
-          Abilites are now sorted by minimum level required.
+          Added https support and updated content
         </span>
       </div>
       <div className={css.item}>
@@ -37,11 +26,8 @@ const News = () => {
             nameSlug="right-chevron-icon"
           />
         </span>
-        <div className={css.itemDate}>2019-01-14</div>
-        <span className={css.itemText}>
-          Now each career page displays the last patch date that career page was
-          updated for.
-        </span>
+        <div className={css.itemDate}>21-04-2023</div>
+        <span className={css.itemText}>Career builder is available</span>
       </div>
     </div>
   );

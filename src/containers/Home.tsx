@@ -62,8 +62,6 @@ class Home extends React.Component<Props> {
       marginRight: true,
       'marginLeft@mobile': true,
     });
-    const githubUrl = 'https://github.com/dalen/RoRBuilder';
-    const githubUrlIssues = `${githubUrl}/issues`;
     return (
       <div className="heightFull">
         <div className={css.wrapper}>
@@ -78,58 +76,21 @@ class Home extends React.Component<Props> {
               <div className="grid-col-2-3 grid-col-1@mobile">
                 <div className={copyClass}>
                   <p className={css.copyText}>
-                    Warhammer Online: Age of Reckoning has returned. Resurrected
-                    by volunteers on a private server, we now have{' '}
+                    Developed and updated by{' '}
                     <a
                       className={css.copyLink}
-                      href="http://www.returnofreckoning.com"
+                      href="http://uogames.org"
                       target="blank"
                     >
-                      Return of Reckoning
-                    </a>
-                    . Inspired by the work of these developers comes RoR Career
-                    Builder.
-                  </p>
-                  <p className={css.copyText}>
-                    Stat buffs/debuffs will have attributes. Ability
-                    bonus/penalty do not stack with other ability
-                    bonuses/penalties. Morale bonus/penalty do not stack with
-                    other morale bonuses/penalties. Unique bonus/penalty stack
-                    with everything.
-                  </p>
-                  <p className={css.copyText}>
-                    This web app aims to replace and improve upon the great work
-                    done by{' '}
-                    <a
-                      className={css.copyLink}
-                      href="http://waronlinebuilder.org"
-                      target="blank"
-                    >
-                      Warhammer Online Career Builder
-                    </a>{' '}
-                    back in 2013.
-                  </p>
-                  <p className={css.copyText}>
-                    Details of updates will appear on this page.
-                  </p>
-                  <p className={css.copyText}>
-                    All code is available on{' '}
-                    <a href={githubUrl} className={css.copyLink} target="blank">
-                      Github
-                    </a>
-                    . Feel free to fork, contribute,{' '}
-                    <a
-                      href={githubUrlIssues}
-                      className={css.copyLink}
-                      target="blank"
-                    >
-                      raise bugs and make suggestions
+                      UOGames team
                     </a>
                     .
                   </p>
                   <p className={css.copyText}>
-                    Many thanks to the original creator Matt Richards and to
-                    Ramasee who updated it before handing it to the RoR team.
+                    Current game patch present: 1.4.8
+                  </p>
+                  <p className={css.copyText}>
+                    Details of updates will appear on this page.
                   </p>
                 </div>
               </div>

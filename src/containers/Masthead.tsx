@@ -95,9 +95,9 @@ class Masthead extends Component<Props, { mastheadActive: boolean }> {
     return (
       <div className={mastheadClass}>
         <div className={css.mastheadOverlay}>
-          <div className={mastheadTitleClass}>RoR Career Builder</div>
+          <div className={mastheadTitleClass}>FoW Career Builder</div>
           <div className={css.mastheadSubtitle}>
-            Online Career Builder for Return of Reckoning
+            Online Career Builder for Warhammer Online: Flame Of War
           </div>
           <div className={mastheadCtaClass}>
             <button
