@@ -12,3 +12,5 @@ public/css
 /import/data-master
 .eslintcache
 /abilities
+/.vs
+/.github
